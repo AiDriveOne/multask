@@ -1,0 +1,49 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+
+<style>
+  /* Default styles for all devices */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  .results-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .results {
+    text-align: left;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  /* Styles for devices with a max width of 767px (phones) */
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 24px;
+    }
+
+    .results {
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+
+  /* Styles for devices with a min width of 768px (tablets and desktops) */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+
+    .results {
+      padding: 30px;
+      margin: 30px;
+    }
+  }
+</style>

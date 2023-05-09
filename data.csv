@@ -1,0 +1,21 @@
+import csv
+
+def manipulate_csv_file(file_path):
+    # Open the data.csv file and read its contents
+    with open(file_path, 'r') as file:
+        reader = csv.reader(file)
+        data = list(reader)
+
+    # Print the first row of the data
+    print(data[0])
+
+    # Print the second column of the data
+    for row in data:
+        print(row[1])
+
+    # Write new data to the file
+    with open(file_path, 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(['New row', 'New data'])
+        for row in data:
+            writer.writerow(row)
